@@ -7,12 +7,12 @@ void setup(){
 }
 
 void draw(){
-  int j = 512 / N;
-  for (int m = 0; m <= 512; m = m + j){
+  float j = 512 / N;
+  for (float m = 0; m <= 512; m = m + j){
     line(m, 0, m, 512);
   }
   
-  for (int k = 0; k <= 512; k = k + j){
+  for (float k = 0; k <= 512; k = k + j){
     line(0, k, 512, k);
   }
 }
