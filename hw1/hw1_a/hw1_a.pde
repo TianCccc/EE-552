@@ -1,7 +1,5 @@
 /**
-* @author: 
-* @param: i
-* @return: 
+* @author: Tiancheng Xu
 */
 void setup(){
   size (500, 500);

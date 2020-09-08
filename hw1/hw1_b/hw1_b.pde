@@ -1,3 +1,6 @@
+/**
+* @author: Tiancheng Xu
+*/
 void setup(){
   for(int i = 1; i < 100; i= i+2){
     print(i,"");
