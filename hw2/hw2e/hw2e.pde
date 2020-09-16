@@ -9,7 +9,6 @@ void setup(){
 float x, y;
 float a = 13, b = 15;
 float t = 0;
-float ts = 0;
 float tt = 0.001;
 
 void draw(){
