@@ -16,8 +16,6 @@ void draw(){
   frameRate(1);
 }
 
-
-// draw triangle start with (x,y)    l is length of side
 void sierpinski(float x1, float y1, float x2, float y2, float x3, float y3, int level){
   if (level == 1){
     triangle (x1,y1,x2,y2,x3,y3);
