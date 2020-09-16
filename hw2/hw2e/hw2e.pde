@@ -6,10 +6,6 @@ void setup(){
   size(800, 800);
 }
 
-// Scale image 50 from the edge
-int AX = (800/2) - 50;
-int BX = (800/2) - 50;
-
 float x, y;
 float a = 13, b = 15;
 float t = 0;
@@ -18,15 +14,15 @@ float tt = 0.001;
 
 void draw(){
   
-  x = AX*sin(PI/2 - a*t) + 800/2;
-  y = BX*sin(PI/2 - b*t) + 800/2;
-  
-  //fill(255, 0, 0);
-  //ellipse(AX*sin(PI/2 - a*ts) + 800/2, BX*sin(PI/2 - b*ts) + 800/2, 7, 7);
+  translate(width/2, height/2);
+  scale(width/2-10, height/2-10);
+  strokeWeight(0);
+  x = cos(a*t);
+  y = cos(b*t);
   
   fill(0,0,255);
   noStroke();
-  ellipse(x, y, 2, 2);
+  ellipse(x, y, 0.01, 0.01);
   
   if(t < PI*2){
     t += tt;
@@ -34,5 +30,4 @@ void draw(){
     t = 0;
     println("Finish!");
   }
-  
 }
