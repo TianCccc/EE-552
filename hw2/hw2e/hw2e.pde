@@ -14,7 +14,7 @@ float tt = 0.001;
 void draw(){
   
   translate(width/2, height/2);
-  scale(width/2-10, height/2-10);
+  scale(width/2, -height/2);
   strokeWeight(0);
   x = cos(a*t);
   y = cos(b*t);
