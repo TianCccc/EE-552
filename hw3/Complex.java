@@ -1,7 +1,6 @@
 /**
  * @author Tiancheng Xu
  */
-package hw3;
 
 import java.text.DecimalFormat;
 
